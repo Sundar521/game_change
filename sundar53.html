@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Haven - Online Store</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1512820790803-83ca734da794?w=1200') no-repeat center/cover;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    /* Books Section */
+    .books {
+      padding: 40px 20px;
+    }
+
+    .books h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 28px;
+      color: #2c3e50;
+    }
+
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .book {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .book:hover {
+      transform: translateY(-5px);
+    }
+
+    .book img {
+      max-width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .book h3 {
+      margin: 15px 0 10px;
+      font-size: 18px;
+      color: #2c3e50;
+    }
+
+    .book p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .book button {
+      background: #2c3e50;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .book button:hover {
+      background: #1a252f;
+    }
+
+    /* Footer */
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>📚 Book Haven</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Your Gateway to Knowledge & Stories</h2>
+  </section>
+
+  <!-- Books -->
+  <section class="books">
+    <h2>Featured Books</h2>
+    <div class="book-grid">
+      <div class="book">
+        <img src="https://covers.openlibrary.org/b/id/8226196-L.jpg" alt="Book 1">
+        <h3>The Great Gatsby</h3>
+        <p>by F. Scott Fitzgerald</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="book">
+        <img src="https://covers.openlibrary.org/b/id/10523327-L.jpg" alt="Book 2">
+        <h3>To Kill a Mockingbird</h3>
+        <p>by Harper Lee</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="book">
+        <img src="https://covers.openlibrary.org/b/id/9872470-L.jpg" alt="Book 3">
+        <h3>1984</h3>
+        <p>by George Orwell</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="book">
+        <img src="https://covers.openlibrary.org/b/id/9255893-L.jpg" alt="Book 4">
+        <h3>Pride and Prejudice</h3>
+        <p>by Jane Austen</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Book Haven | Designed with ❤️</p>
+  </footer>
+
+</body>
+</html>
